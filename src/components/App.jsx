@@ -44,6 +44,11 @@ export default function App() {
         <div className='app'>
             <MenuAddContact onClickSubmitAdd={onClickSubmitAdd} existenceNumberAdd={existenceNumberAdd} shortNumberAdd={shortNumberAdd} contacts={contacts} />
             <ListСontacts contacts={contacts} deleteContact={deleteContact} changeContact={changeContact} />
+            <div className='app__project-description'>
+                <h1>Описание проекта</h1>
+                <p>Проект выполнен на React, собран при помощи Webpack. Стили написаны на препроцессоре Less.</p>
+                <a href='https://github.com/Vetal-Ilin/testTaskPhoneBook.git'><p>Исходный код на репозиторие по ссылке Vetal-Ilin/testTaskPhoneBook.git</p></a>
+            </div>
         </div>
     )
 }
